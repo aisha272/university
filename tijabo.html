@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 60%;
+            width: 100%;
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 60%;
+            width: 100%;
+            object-fit: cover; /* Makes sure the image covers the entire screen */
+            z-index: -1; /* Ensures the image stays behind other content */
+        }
+
+        .content {
+            position: relative;
+            color: white;
+            text-align: center;
+            padding-top: 50px;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+
+
+   
+ 
+</head>
+<body>
+    <!-- <section class="header">
+        <h1>Welcome to our website</h1>
+        <p>This is a sample website for educational purposes only.</p>
+       
+    </section> -->
+
+    <img src="images/banner1-uni.jpg" alt= "">
+
+    
+    <div class="content">
+        
+
+       <nav>
+        <a href="tijabo.html"><img src="images/logo-uni.jpg" alt="" style="width: 5%; height: 60%;"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">COURSE</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+       </nav>
+       
+       
+       <div class="text-box">
+        <h1>Welcome to our website</h1>
+        <p>This is a sample website for educational purposes.</p>
+        
+        <a href="" class="hero-btn">visit us to know more</a>
+
+
+       </div> 
+       
+    </div>
+
+    
+</div>
+
+
+<div class="course" style="padding: 20%;">
+    <h2>Courses</h2>
+    <p>Discover our courses.</p>
+    
+     <div class="row">
+     <div class="couurse-col">
+        <h3>Bachelor Degree</h3>
+        <p> Lorem ipsum dolor, sit amet</p>
+     </div>
+     <div class="couurse-col">
+        <h3>High School</h3>
+        <p> Lorem ipsum dolor, sit amet</p>
+     </div>
+     <div class="couurse-col">
+        <h3>post Graduete</h3>
+        <p> Lorem ipsum dolor, sit amet</p>
+     </div>
+     </div>
+</div>
+
+
+<script>
+    var navLinks= document.getElementById(navLinks);
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+
+    }
+</script>
+</body>
+</html>
